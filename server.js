@@ -6,7 +6,7 @@ require('dotenv').config();
 const { refreshLeaveData, FILE_PATH } = require('./functions/breathe');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3500;
 
 function requireAuth(req, res, next) {
     const tokenFromHeader = (req.headers.authorization || '').split(' ')[1];
